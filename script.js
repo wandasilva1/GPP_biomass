@@ -78,25 +78,6 @@ var biomass_viz = {min: 300, max: 1500, palette: "green,yellow,red"};
 // Add biomass layer to the map
 Map.addLayer(biomassCollection.mean().clip(ucs), biomass_viz, 'Biomass_Tijuca');
 
-// Define a specific dry period for visualization (2022)
-var vizStartDate = ee.Date.fromYMD(2022, 3, 21);
-var vizEndDate = ee.Date.fromYMD(2022, 9, 20);
-
-// Filter NPP collection for the specific dry period
-var npp8CollectionViz = npp8Collection.filterDate(vizStartDate, vizEndDate);
-Map.addLayer(npp8CollectionViz.mean().clip(ucs), npp_viz, "dry NPP tijuca 22");
-
-// Filter GPP collection for the specific dry period
-var gppCollectionViz = gppCollection.filterDate(vizStartDate, vizEndDate);
-Map.addLayer(gppCollectionViz.mean().clip(ucs), gpp_viz, "dry GPP tijuca 22");
-
-// Filter biomass collection for the specific dry period
-var biomassCollectionViz = biomassCollection.filterDate(vizStartDate, vizEndDate);
-Map.addLayer(biomassCollectionViz.mean().clip(ucs), biomass_viz, "dry biomass tijuca 22");
-
-// Define additional date ranges to analyze other periods
-// ...
-
 // Define and plot charts for biomass, NPP, and GPP over time
 var title = {
   title: 'Biomass Production in Tijuca National Park',
