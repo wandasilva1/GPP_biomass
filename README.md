@@ -1,4 +1,4 @@
-This is a repository of data used in the manuscript "Urbanization increases gross primary production and biomass of Atlantic Forest fragments" by Wanda da Silva, Marcelo Alves, and Rafael Zenni.
+This is a repository of data used in the manuscript **"Urbanization increases gross primary production and biomass of Atlantic Forest fragments"** by Wanda da Silva, Marcelo Alves, and Rafael Zenni.
 
 The file "adapted_engine_script.js" contains a JavaScript code adapted to obtain data from the MODIS sensor products by "Google Earth Engine" - GEE (https://earthengine.google.com/).
 
